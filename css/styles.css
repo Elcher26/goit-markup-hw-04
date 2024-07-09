@@ -307,6 +307,7 @@ a {
     align-items: center;
     justify-content: center;
 }
+
 .media-icon {
     fill: #f4f4fd;
 }
@@ -424,11 +425,9 @@ a {
 .basement-wrap-link:focus {
     background-color: #31d0aa;
 }
-.media-icon {
+.basement-media-icon {
     fill: #f4f4fd
 }
-
-
 .basement-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;

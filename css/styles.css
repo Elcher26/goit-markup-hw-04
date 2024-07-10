@@ -294,13 +294,11 @@ a {
     display: flex;
     justify-content: center;
     gap: 24px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .team-media-list {
     width: 40px;
-    height: 40px;
-    
+    height: 40px;   
 }
 .team-media-link {
     width: 100%;
@@ -310,8 +308,9 @@ a {
     display: flex; 
     align-items: center;
     justify-content: center;
-      
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
+      
 .media-icon {
     fill: #f4f4fd;
 }
@@ -341,11 +340,12 @@ a {
 .portfolio-list-item {
     width: calc((100% - 48px) / 3); 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    transform: translateY(0%);
+    
 }
 
 .portfolio-list-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transform: translateY(0%);
 }
 
 .portfolio-style {

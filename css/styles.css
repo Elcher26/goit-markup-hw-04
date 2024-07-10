@@ -308,7 +308,9 @@ a {
     display: flex; 
     align-items: center;
     justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
       
 .media-icon {
@@ -340,18 +342,20 @@ a {
 .portfolio-list-item {
     width: calc((100% - 48px) / 3); 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-    
 }
 
 .portfolio-list-item:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transform: translateY(0%);
 }
 
 .portfolio-style {
     position: relative; 
     overflow: hidden;
 }
+.portfolio-style:hover {
+    transform: translateY(0%);
+}
+
 .portfolio-alt-text {
     position: absolute;
     top: 0;
